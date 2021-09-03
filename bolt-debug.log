@@ -1,0 +1,9 @@
+2021-09-03T09:10:12.369726 INFO   [main] [Bolt::Logger] Loaded project from '/Users/matthew/Code/bolt-puppetserver'
+2021-09-03T09:10:12.388603 DEBUG  [main] [Bolt::PAL] Loading modules from /opt/puppetlabs/bolt/lib/ruby/gems/2.7.0/gems/bolt-3.3.0/bolt-modules:/Users/matthew/Code/bolt-puppetserver/modules:/Users/matthew/Code/bolt-puppetserver/.modules:/opt/puppetlabs/bolt/lib/ruby/gems/2.7.0/gems/bolt-3.3.0/modules
+2021-09-03T09:10:12.394639 DEBUG  [main] [Bolt::Inventory] Loaded inventory from /Users/matthew/Code/bolt-puppetserver/inventory.yaml
+2021-09-03T09:10:12.402169 DEBUG  [main] [Bolt::Executor] Started with 100 max thread(s)
+2021-09-03T09:10:12.620193 INFO   [event-publisher] [Bolt::Outputter::Logger] Starting: task puppetserver::create_structured_facts on bolt-cloud-demo-01.centralus.cloudapp.azure.com
+2021-09-03T09:10:13.154796 INFO   [] [Bolt::Executor] Running task puppetserver::create_structured_facts with '{"filename":"myinfo.json","facts":{"myinfo":{"foo":"bar"}},"_task":"puppetserver::create_structured_facts"}' on ["bolt-cloud-demo-01.centralus.cloudapp.azure.com"]
+2021-09-03T09:10:13.155062 DEBUG  [] [Bolt::Transport::SSH] Running task 'puppetserver::create_structured_facts' on bolt-cloud-demo-01.centralus.cloudapp.azure.com
+2021-09-03T09:10:15.957828 INFO   [] [Bolt::Executor] {"target":"bolt-cloud-demo-01.centralus.cloudapp.azure.com","action":"task","object":"puppetserver::create_structured_facts","status":"success","value":{"_output":""}}
+2021-09-03T09:10:15.958908 INFO   [event-publisher] [Bolt::Outputter::Logger] Finished: task puppetserver::create_structured_facts with 0 failures in 3.34 sec

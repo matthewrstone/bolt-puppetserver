@@ -1,0 +1,17 @@
+{
+  "puppet_task_version": 1,
+  "supports_noop": false,
+  "description": "A short description of this task",
+  "parameters": {
+    "filename":{
+      "description": "The name of the facts file.",
+      "default": "myinfo.json",
+      "type": "String[0]"
+    },
+    "facts":{
+      "description": "A JSON Hash of Facts",
+      "default": { "myinfo": {"foo": "bar"} },
+      "type": "Hash"
+    }
+  }
+}

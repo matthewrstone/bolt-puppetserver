@@ -1,0 +1,17 @@
+{
+  "puppet_task_version": 1,
+  "supports_noop": false,
+  "description": "A short description of this task",
+  "parameters": {
+    "role":{
+      "description": "The puppet role to assign to this node.",
+      "default": "role::webserver",
+      "type": "String[0]"
+    },
+    "env":{
+      "description": "The puppet environment for this node.",
+      "default": "production",
+      "type": "Enum['production','development']"
+    }
+  }
+}
