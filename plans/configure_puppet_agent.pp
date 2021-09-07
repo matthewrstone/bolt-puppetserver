@@ -1,4 +1,4 @@
-plan puppetize::configure_puppet_agent(
+plan puppetserver::configure_puppet_agent(
   String[0] $puppetserver,
   String[0] $vm_name,
   TargetSpec $targets
