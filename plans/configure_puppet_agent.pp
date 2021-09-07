@@ -26,7 +26,7 @@ plan puppetserver::configure_puppet_agent(
   $exit_code = $puppet_run.to_data[0]['value']['exit_code']
   case $exit_code {
     0: {return 'The run succeeded with no changes or failures; the system was already in the desired state.'}
-    1: {return 'The run failed, or wasn\'t attempted due to another run already in progress.'}
+    1: {fail('The run failed, or wasn\'t attempted due to another run already in progress.')}
     2: {return 'The run succeeded, and some resources were changed.'}
     4: {return 'The run succeeded, and some resources failed.'}
     6: {return 'The run succeeded, and included both changes and failures.'}
