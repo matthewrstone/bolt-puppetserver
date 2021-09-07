@@ -5,7 +5,7 @@ plan puppetserver::configure_puppet_agent(
 ){
 
   # Setup target for more Bolt or Puppet agent config
-  apply_prep($target)
+  apply_prep($targets)
 
   # Create a symlink if none exists.
   run_command('sudo ln -s /opt/puppetlabs/bin/puppet /usr/bin/puppet', $targets)
