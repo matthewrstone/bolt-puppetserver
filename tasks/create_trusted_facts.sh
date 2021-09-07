@@ -1,6 +1,4 @@
-#!/bin/sh
 # Puppet Task Name: create_trusted_facts
-
 # Create the puppet dir
 
 if [ ! -d /etc/puppetlabs/puppet ]; then
