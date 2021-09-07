@@ -1,9 +1,12 @@
-!/bin/sh
+#!/bin/sh
 # Puppet Task Name: create_trusted_facts
 
 # Create the puppet dir
 
-mkdir -p /etc/puppetlabs/puppet;
+if [ ! -d /etc/puppetlabs/puppet ]; then
+  mkdir -p /etc/puppetlabs/puppet;
+fi
+
 cat << EOF > /etc/puppetlabs/puppet/csr_attributes.yaml
 ---
 extension_requests:
