@@ -1,10 +1,8 @@
 !/bin/sh
 # Puppet Task Name: create_trusted_facts
 
-# Create the fact directory if it doesn't exist
-if [ ! -d /etc/puppetlabs/puppet ]; then
-  mkdir -p /etc/puppetlabs/puppet;
-fi
+# Create the puppet dir
+mkdir -p /etc/puppetlabs/puppet;
 
 cat << EOF > /etc/puppetlabs/puppet/csr_attributes.yaml
 ---
