@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Puppet Task Name: create_trusted_facts
 # Create the puppet dir
 
