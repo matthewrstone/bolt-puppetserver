@@ -22,7 +22,7 @@ plan puppetserver::configure_puppet_agent(
   run_command('sudo puppet config set server puppet', $targets)
 
   # Enable Puppet service
-  run_command('sysctl enable puppet', $targets)
+  run_command('systemctl enable puppet', $targets)
 
   # Fire away
   $puppet_run = run_command('sudo puppet agent -t', $targets, { '_catch_errors' => true })
